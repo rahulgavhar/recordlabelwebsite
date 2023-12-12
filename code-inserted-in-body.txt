@@ -290,7 +290,7 @@ const urlllmp = window.location.href;
 const indxxmp = urlllmp.search(".com/music");
 const basicidmp = "#trackid";
 let statusmp = "";
-if ((indxxmp!=-1) && (urlllmp!="https://vestibuletrap.mozello.com/musiclibrary/")  && (urlllmp!="https://vestibuletrap.mozello.com/musiclibrary")){
+if ((indxxmp!=-1) && (urlllmp!="https://vestibuletrap.mozello.com/musiclibrary/")  && (urlllmp!="https://vestibuletrap.mozello.com/musiclibrary") && (urlllmp!="https://vestibuletrap.mozello.com/music-platforms") && (urlllmp!="https://vestibuletrap.mozello.com/music-platforms/")){
     
     if (urlllmp.search("#trackid")!=-1){
         if ((Number.parseInt(urlllmp.substr(indxxmp+19))>Number.parseInt(document.querySelector(".music").firstElementChild.getAttribute("track-id"))) || (Number.parseInt(urlllmp.substr(indxxmp+19))<1) || isNaN(Number.parseInt(urlllmp.substr(indxxmp+19)))){
