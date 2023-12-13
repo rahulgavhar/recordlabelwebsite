@@ -1,3 +1,4 @@
+<!--in case there's a change in any css file(with the same file name) refresh the page with ctrl+ refresh button to see changes-->
 <link rel="stylesheet" href="https://site-1008488.mozfiles.com/files/1008488/cursor.css">
 <meta name="viewport" content="width=device-width initial-scale=1.0">
 <!-- COMMON SCRIPT TAG FOR ALL BACKTOTOP BUTTONS ON WEBSITE -->
@@ -81,6 +82,9 @@ return c / 2 * (t * t * t + 2) + b;
 </script>
 
 <style>
+body::-webkit-scrollbar { 
+    display: none;
+}
 .on_hover a.moze-button:hover{
     background-color:transparent;
     color:white;
@@ -184,7 +188,8 @@ input:focus::placeholder {
         height:100vh;
         background-size:10%;
     }
-}</style>
+}
+</style>
 <div class="cursor"></div>
 <script>
 //onscrollul function
