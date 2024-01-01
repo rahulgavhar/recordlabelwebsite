@@ -172,16 +172,7 @@ input:focus::placeholder {
     background-color: rgba(124,74,240, 0.1);
     color:#7c4af0;
 }
-html::-webkit-scrollbar{
-    width: 0.15rem;
-}
-html::-webkit-scrollbar-track{
-    background: white;
-}
-html::-webkit-scrollbar-thumb{
-    background: rgb(124, 74, 240);
-    border-radius: 5rem;
-}
+
 #loading{
     background: #ffffff url('https://i.ibb.co/wY3qRkC/ecommaker-15700.gif') no-repeat center center;
     height:100vh;
