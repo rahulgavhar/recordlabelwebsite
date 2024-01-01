@@ -82,6 +82,12 @@ return c / 2 * (t * t * t + 2) + b;
 </script>
 
 <style>
+body{
+    height:100%;
+}
+::-webkit-scrollbar{
+    display:none;
+}
 .on_hover a.moze-button:hover{
     background-color:transparent;
     color:white;
