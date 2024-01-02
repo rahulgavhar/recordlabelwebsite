@@ -452,7 +452,7 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
     };
     
     //Add meta tag for google adsense
-    document.head.insertAdjacentHTML("afterbegin",'<meta name="google-adsense-account" content="ca-pub-5483447146655436">');
+    document.head.insertAdjacentHTML("beforeend",'<meta name="google-adsense-account" content="ca-pub-5483447146655436">');
   
     
 </script>
