@@ -2,7 +2,14 @@ body{
     height:100%;
 }
 ::-webkit-scrollbar{
-    display:none;
+    width:0.3rem;
+}
+::-webkit-scrollbar-thumb{
+    border-radius:5px;
+    background: #811eba;
+}
+::-webkit-scrollbar-track{
+    background: transparent;
 }
 .on_hover a.moze-button:hover{
     background-color:transparent;
