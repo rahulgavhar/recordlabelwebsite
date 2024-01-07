@@ -316,7 +316,9 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.style.maxHeight="206px";
          //#wrap
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.style.bottom="10px";
-     };
+     }else{
+            document.querySelector(".engaga-frame").remove();
+     }
      //Change Color of Cookies popup
      if (document.querySelector("#cookie-notification")!=null){
          document.querySelector("#cookie-notification").firstElementChild.nextElementSibling.style.backgroundColor="#6a12a3";
