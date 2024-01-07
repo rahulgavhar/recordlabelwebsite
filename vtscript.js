@@ -296,8 +296,6 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
         document.querySelector(".engaga-badge").style.visibility="hidden";
     };
 
-    //Avoid storing cache for contentWindow
-    document.head.insertAdjacentHTML('afterbegin','<meta http-equiv="Cache-control" content="no-cache">');
     //Change Engaga Font
      if (window.location.href!="https://vestibuletrap.mozello.com" && window.location.href!="https://vestibuletrap.mozello.com/home" && window.location.href!="https://vestibuletrap.mozello.com/"){
          //put font Exo 2 
@@ -329,7 +327,11 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
     
     
 };
-  
+
+
+  //Avoid storing cache for contentWindow
+    document.head.insertAdjacentHTML('afterbegin','<meta http-equiv="Cache-control" content="no-cache">');
+
   //homepage playlists automatic text
      if (window.location.href==("https://vestibuletrap.mozello.com/" || "https://vestibuletrap.mozello.com/home/" || "https://vestibuletrap.mozello.com/home" || "https://vestibuletrap.com/" || "https://vestibuletrap.com/home")){
          var elements = document.getElementsByClassName('typewrite');
