@@ -295,10 +295,13 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
      if (document.querySelector(".engaga-badge")!=null){
         document.querySelector(".engaga-badge").style.visibility="hidden";
     };
+
+    //Avoid storing cache for contentWindow
+    document.head.insertAdjacentHTML('afterbegin','<meta http-equiv="Cache-control" content="no-cache">');
     //Change Engaga Font
      if (window.location.href!="https://vestibuletrap.mozello.com" && window.location.href!="https://vestibuletrap.mozello.com/home" && window.location.href!="https://vestibuletrap.mozello.com/"){
-         //put font Exo 2 and avoid storing cache from contentWindow
-         document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('beforeend','<style>@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");</style><meta http-equiv="Cache-control" content="no-cache">');
+         //put font Exo 2 
+         document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('beforeend','<style>@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");</style>');
          document.querySelector(".engaga-frame").contentWindow.document.body.style.fontFamily="'Exo 2', Roboto";
          //.title
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.style.fontFamily="inherit";
