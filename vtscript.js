@@ -299,6 +299,12 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
      if (document.querySelector(".engaga-frame")!=null){
          document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('beforeend','<style>@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");</style>');
          document.querySelector(".engaga-frame").contentWindow.document.body.style.fontFamily="'Exo 2', Roboto";
+         document.querySelector(".engaga-frame").contentWindow.document.querySelector(".title").style.fontFamily="inherit";
+         document.querySelector(".engaga-frame").contentWindow.document.querySelector(".bodytext").style.fontFamily="inherit";
+         document.querySelector(".engaga-frame").contentWindow.document.querySelector("#comp_submit").style.fontFamily="inherit";
+
+         //change max-height
+         document.querySelector(".engaga-frame").contentWindow.document.querySelector("#box").style.maxHeight="200px";
      };
      //Change Color of Cookies popup
      if (document.querySelector("#cookie-notification")!=null){
