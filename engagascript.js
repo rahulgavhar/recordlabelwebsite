@@ -874,7 +874,7 @@
         urla = urla.protocol + '//' + urla.host;
 
         $.ajax({
-            url: urla + '/frontend/' + user_id + '/settings.js',
+            url: 'https://spark.engaga.com' + '/frontend/' + user_id + '/settings.js',
             jsonpCallback: 'callback',
             dataType: 'jsonp'
         })
@@ -1064,7 +1064,7 @@
             }
         });
 
-        loadCss(urla + '/public/site.css')
+        loadCss('https://spark.engaga.com' + '/public/site.css')
     }
 
     
