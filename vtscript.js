@@ -311,8 +311,10 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
 
       
     //******************* Place Code Above For Onload *********************//
-    
-    //Change Engaga Font (ALERT: 'change engaga font' should be at the end of onload)
+    //(ALERT: 'Change Engaga Font' should be at the end of onload)
+    //NOTE: Error will appear in console if reloaded consecutively within 2 seconds, cuz contentWindow appears after 2 seconds
+  
+    //Change Engaga Font 
           if (window.location.href!="https://vestibuletrap.mozello.com" && window.location.href!="https://vestibuletrap.mozello.com/home" && window.location.href!="https://vestibuletrap.mozello.com/"){
          //put font Exo 2 
             if(document.querySelector(".engaga-frame").contentWindow.document.location.href!="about:blank"){
