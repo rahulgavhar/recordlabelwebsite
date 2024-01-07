@@ -1,4 +1,6 @@
+//doesnt store cache
 document.head.insertAdjacentHTML("afterbegin",'<meta http-equiv="Cache-control" content="no-cache">');
+
 //avoid being in someone else's iframe
 if(window.self != window.top) {
   try {
@@ -296,8 +298,21 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
      if (document.querySelector(".engaga-badge")!=null){
         document.querySelector(".engaga-badge").style.visibility="hidden";
     };
+     
+     //Change Color of Cookies popup
+     if (document.querySelector("#cookie-notification")!=null){
+         document.querySelector("#cookie-notification").firstElementChild.nextElementSibling.style.backgroundColor="#6a12a3";
+         document.querySelector("#cookie-notification").firstElementChild.nextElementSibling.nextElementSibling.style.border="1.3px solid #6a12a3";
+     };
 
-    //Change Engaga Font
+    //******************* Place Code Below For Onload *********************//
+
+
+
+      
+    //******************* Place Code Above For Onload *********************//
+    
+    //Change Engaga Font (ALERT: 'change engaga font' should be at the end of onload)
           if (window.location.href!="https://vestibuletrap.mozello.com" && window.location.href!="https://vestibuletrap.mozello.com/home" && window.location.href!="https://vestibuletrap.mozello.com/"){
          //put font Exo 2 
             if(document.querySelector(".engaga-frame").contentWindow.document.location.href!="about:blank"){
@@ -323,16 +338,6 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
      }else{
             document.querySelector(".engaga-scrollbox").remove();
      }
-     
-     //Change Color of Cookies popup
-     if (document.querySelector("#cookie-notification")!=null){
-         document.querySelector("#cookie-notification").firstElementChild.nextElementSibling.style.backgroundColor="#6a12a3";
-         document.querySelector("#cookie-notification").firstElementChild.nextElementSibling.nextElementSibling.style.border="1.3px solid #6a12a3";
-     };
-
-
-
-  
 };
 
 
