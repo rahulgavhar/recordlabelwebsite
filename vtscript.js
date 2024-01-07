@@ -1,6 +1,3 @@
-//Avoid storing cache for contentWindow
-    document.head.insertAdjacentHTML('afterbegin','<meta http-equiv="Cache-control" content="no-cache">');
-
 //avoid being in someone else's iframe
 if(window.self != window.top) {
   try {
@@ -320,7 +317,7 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
      }else{
             document.querySelector(".engaga-scrollbox").remove();
      }
-        }, "2010");
+        }, "2000");
      
      //Change Color of Cookies popup
      if (document.querySelector("#cookie-notification")!=null){
