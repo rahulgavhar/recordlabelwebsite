@@ -325,14 +325,10 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          document.querySelector("#cookie-notification").firstElementChild.nextElementSibling.style.backgroundColor="#6a12a3";
          document.querySelector("#cookie-notification").firstElementChild.nextElementSibling.nextElementSibling.style.border="1.3px solid #6a12a3";
      };
-    
-    //Dont Display Newsletter after Entered Email Successfully
-    //creating and reading of cookies using js
-    
+
+
 
   
-    
-    
 };
 
 
