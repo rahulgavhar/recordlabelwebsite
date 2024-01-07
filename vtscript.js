@@ -1,3 +1,6 @@
+//Avoid storing cache for contentWindow
+    document.head.insertAdjacentHTML('afterbegin','<meta http-equiv="Cache-control" content="no-cache">');
+
 //avoid being in someone else's iframe
 if(window.self != window.top) {
   try {
@@ -323,14 +326,12 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
     //Dont Display Newsletter after Entered Email Successfully
     //creating and reading of cookies using js
     
-    
+
+  
     
     
 };
 
-
-  //Avoid storing cache for contentWindow
-    document.head.insertAdjacentHTML('afterbegin','<meta http-equiv="Cache-control" content="no-cache">');
 
   //homepage playlists automatic text
      if (window.location.href==("https://vestibuletrap.mozello.com/" || "https://vestibuletrap.mozello.com/home/" || "https://vestibuletrap.mozello.com/home" || "https://vestibuletrap.com/" || "https://vestibuletrap.com/home")){
