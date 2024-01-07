@@ -297,7 +297,7 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
     };
     //Change Engaga Font
      if (document.querySelector(".engaga-frame")!=null){
-         document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('afterend','<link rel="preconnect" href="https://fonts.googleapis.com"> <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;400&family=Montserrat:wght@100&display=swap" rel="stylesheet">');
+         document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('beforeend','<style>@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");</style>');
          document.querySelector(".engaga-frame").contentWindow.document.body.style.fontFamily="'Exo 2', Roboto";
      };
      //Change Color of Cookies popup
