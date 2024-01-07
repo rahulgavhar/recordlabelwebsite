@@ -297,9 +297,9 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
     };
 
     //Change Engaga Font
-    setTimeout(() => {
           if (window.location.href!="https://vestibuletrap.mozello.com" && window.location.href!="https://vestibuletrap.mozello.com/home" && window.location.href!="https://vestibuletrap.mozello.com/"){
          //put font Exo 2 
+    setTimeout(() => {
          document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('beforeend','<style>@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");</style>');
          document.querySelector(".engaga-frame").contentWindow.document.body.style.fontFamily="'Exo 2', Roboto";
          //.title
@@ -314,10 +314,11 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.style.maxHeight="206px";
          //#wrap
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.style.bottom="10px";
+            
+        }, "2001");
      }else{
             document.querySelector(".engaga-scrollbox").remove();
      }
-        }, "2000");
      
      //Change Color of Cookies popup
      if (document.querySelector("#cookie-notification")!=null){
