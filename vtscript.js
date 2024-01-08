@@ -318,6 +318,7 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          //put font Exo 2 
              setTimeout(() => {
             if(document.querySelector(".engaga-frame").contentWindow.document.location.href!="about:blank"){
+              document.querySelector(".engaga-frame").contentWindow.document.body.style.opacity="1";
          document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('beforeend','<style>@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");</style>');
          document.querySelector(".engaga-frame").contentWindow.document.body.style.fontFamily="'Exo 2', Roboto";
          //.title
@@ -331,11 +332,10 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
             
         }, "2199");
     
-     }else{
-            document.querySelector(".engaga-scrollbox").remove();
      }
 };
-
+  //set Engaga Opacity to 0 before it diplays again the second time
+  document.querySelector(".engaga-frame").contentWindow.document.body.style.opacity="0";
 
   //homepage playlists automatic text
      if (window.location.href==("https://vestibuletrap.mozello.com/" || "https://vestibuletrap.mozello.com/home/" || "https://vestibuletrap.mozello.com/home" || "https://vestibuletrap.com/" || "https://vestibuletrap.com/home")){
