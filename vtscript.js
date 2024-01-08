@@ -314,7 +314,6 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
     //(ALERT: 'Change Engaga Font' should be at the end of onload)
   
     //Change Engaga Font 
-          if (window.location.href!="https://vestibuletrap.mozello.com" && window.location.href!="https://vestibuletrap.mozello.com/home" && window.location.href!="https://vestibuletrap.mozello.com/"){
          //put font Exo 2 
              setTimeout(() => {
             if(document.querySelector(".engaga-frame").contentWindow.document.location.href!="about:blank"){
@@ -331,15 +330,18 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
                 }
             
         }, "2199");
-    
-     }
 };
-  //Engaga should display only once per day
-        var d = new Date();
+
+  //Engaga should display only once per day (for users not subscribed)
+          if (window.location.href!="https://vestibuletrap.mozello.com" && window.location.href!="https://vestibuletrap.mozello.com/home" && window.location.href!="https://vestibuletrap.mozello.com/home/" && window.location.href!="https://vestibuletrap.mozello.com/"){
+               setTimeout(() => {
+            var d = new Date();
               d.setTime(d.getTime() + (24 * 60 * 60 * 1000));
               var expires = "expires=" + d.toUTCString();
               document.cookie = "engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d" + "=" + "yes" + ";" + expires + ";path=/";
               document.cookie = "engaga_seen_84f2b37a6870c3cce1b7eb1211b2ef0d" + "=" + "yes" + ";" + expires + ";path=/";
+            }, "3199");
+          }
 
   //homepage playlists automatic text
      if (window.location.href==("https://vestibuletrap.mozello.com/" || "https://vestibuletrap.mozello.com/home/" || "https://vestibuletrap.mozello.com/home" || "https://vestibuletrap.com/" || "https://vestibuletrap.com/home")){
