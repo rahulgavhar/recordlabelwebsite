@@ -312,7 +312,6 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
       
     //******************* Place Code Above For Onload *********************//
     //(ALERT: 'Change Engaga Font' should be at the end of onload)
-    //NOTE: Error will appear in console if reloaded consecutively within 2 seconds, cuz contentWindow appears after 2 seconds
   
     //Change Engaga Font 
           if (window.location.href!="https://vestibuletrap.mozello.com" && window.location.href!="https://vestibuletrap.mozello.com/home" && window.location.href!="https://vestibuletrap.mozello.com/"){
@@ -334,7 +333,7 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          //#wrap
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.style.bottom="10px";
             
-        }, "2001");
+        }, "2200");
             }
     
      }else{
