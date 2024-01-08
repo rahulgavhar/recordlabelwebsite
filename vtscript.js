@@ -327,16 +327,19 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          //#comp_submit
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.style.fontFamily="inherit";
     
-    var d = new Date();
-    d.setTime(d.getTime() + (24 * 60 * 60 * 1000));
-    var expires = "expires=" + d.toUTCString();
-    document.cookie = "engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d" + "=" + "yes" + ";" + expires + ";path=/";
+              
                 }
             
         }, "2199");
     
      }
 };
+  //Engaga should display only once per day
+        var d = new Date();
+              d.setTime(d.getTime() + (24 * 60 * 60 * 1000));
+              var expires = "expires=" + d.toUTCString();
+              document.cookie = "engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d" + "=" + "yes" + ";" + expires + ";path=/";
+              document.cookie = "engaga_seen_84f2b37a6870c3cce1b7eb1211b2ef0d" + "=" + "yes" + ";" + expires + ";path=/";
 
   //homepage playlists automatic text
      if (window.location.href==("https://vestibuletrap.mozello.com/" || "https://vestibuletrap.mozello.com/home/" || "https://vestibuletrap.mozello.com/home" || "https://vestibuletrap.com/" || "https://vestibuletrap.com/home")){
