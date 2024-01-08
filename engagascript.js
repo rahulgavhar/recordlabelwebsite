@@ -167,7 +167,7 @@
 
             function _onFormAppeared() {
                 this.has_shown = false;
-                this.is_visible = true;
+                this.is_visible = false;
                 this.placeAppearPixel();
                 this.sendStatistics('show');
                 createCookie('engaga_seen_' + form_settings.campaign_uid, 'yes', form_settings.dont_show_again);
