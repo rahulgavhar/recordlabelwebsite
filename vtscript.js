@@ -330,8 +330,6 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          //change max-height
          //#box
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.style.maxHeight="206px";
-         //#wrap
-         document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.style.bottom="10px";
             
         }, "2200");
             }
