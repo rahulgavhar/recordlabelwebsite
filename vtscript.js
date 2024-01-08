@@ -316,8 +316,8 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
     //Change Engaga Font 
           if (window.location.href!="https://vestibuletrap.mozello.com" && window.location.href!="https://vestibuletrap.mozello.com/home" && window.location.href!="https://vestibuletrap.mozello.com/"){
          //put font Exo 2 
+             setTimeout(() => {
             if(document.querySelector(".engaga-frame").contentWindow.document.location.href!="about:blank"){
-                setTimeout(() => {
          document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('beforeend','<style>@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");</style>');
          document.querySelector(".engaga-frame").contentWindow.document.body.style.fontFamily="'Exo 2', Roboto";
          //.title
@@ -327,9 +327,9 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          //#comp_submit
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.style.fontFamily="inherit";
 
+                }
             
         }, "2199");
-            }
     
      }else{
             document.querySelector(".engaga-scrollbox").remove();
