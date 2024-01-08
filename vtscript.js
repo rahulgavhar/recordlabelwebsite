@@ -327,9 +327,6 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          //#comp_submit
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.style.fontFamily="inherit";
 
-         //change max-height
-         //#box
-         document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.style.maxHeight="206px";
             
         }, "2200");
             }
