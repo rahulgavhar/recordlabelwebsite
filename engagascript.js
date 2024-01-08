@@ -411,7 +411,6 @@
                 has_shown : false,
                 system_url: null,
 
-                sendStatistics: _sendStatistics,
                 placePixel: _placePixel,
                 onFormAppeared: _onFormAppeared,
                 onFormHidden: _onFormHidden,
