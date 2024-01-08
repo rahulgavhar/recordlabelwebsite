@@ -1036,9 +1036,9 @@
                         dialog.hideDialog();
                     } else if (data.msg == 'subscribed') {
                         dialog.placeSubscribePixel();
-                        dialog.sending_statistics = false;
+                        dialog.sending_statistics = true;
                         dialog.sendStatistics('convert', function() {
-                            dialog.sending_statistics = false;
+                            dialog.sending_statistics = true;
                             if (dialog.redirectFunction) {
                                 dialog.redirectFunction();
                                 dialog.redirectFunction = null;
