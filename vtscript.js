@@ -317,7 +317,7 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          //put font Exo 2 
              setTimeout(() => {
                if(document.querySelector(".engaga-scrollbox")!=null){
-            if(document.querySelector(".engaga-frame").contentWindow.document.location.href!="about:blank" && !document.cookie.includes("shownengagaOnce=yes"){
+            if(document.querySelector(".engaga-frame").contentWindow.document.location.href!="about:blank" && !document.cookie.includes("shownengagaOnce=yes")){
          document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('beforeend','<style>@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");</style>');
          document.querySelector(".engaga-frame").contentWindow.document.body.style.fontFamily="'Exo 2', Roboto";
          //.title
