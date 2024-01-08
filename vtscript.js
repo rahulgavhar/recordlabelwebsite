@@ -317,6 +317,10 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          //put font Exo 2 
              setTimeout(() => {
             if(document.querySelector(".engaga-frame").contentWindow.document.location.href!="about:blank"){
+                //Engaga should display only once per day (for users not subscribed)
+                    if(document.cookie.includes("engaga_seen_84f2b37a6870c3cce1b7eb1211b2ef0d")){
+                        document.querySelector(".engaga-scrollbox").remove();
+                            }
          document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('beforeend','<style>@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");</style>');
          document.querySelector(".engaga-frame").contentWindow.document.body.style.fontFamily="'Exo 2', Roboto";
          //.title
@@ -329,11 +333,7 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
             
         }, "2199");
 };
-  
-  //Engaga should display only once per day (for users not subscribed)
-  if(document.cookie.includes("engaga_seen_84f2b37a6870c3cce1b7eb1211b2ef0d")){
-    document.querySelector(".engaga-scrollbox").remove();
-  }
+
   //homepage playlists automatic text
      if (window.location.href==("https://vestibuletrap.mozello.com/" || "https://vestibuletrap.mozello.com/home/" || "https://vestibuletrap.mozello.com/home" || "https://vestibuletrap.com/" || "https://vestibuletrap.com/home")){
          var elements = document.getElementsByClassName('typewrite');
