@@ -331,7 +331,7 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
 };
   
   //Engaga should display only once per day (for users not subscribed)
-  if(document.cookie.includes("engaga_seen_84f2b37a6870c3cce1b7eb1211b2ef0d"){
+  if(document.cookie.includes("engaga_seen_84f2b37a6870c3cce1b7eb1211b2ef0d")){
     document.querySelector(".engaga-scrollbox").remove();
   }
   //homepage playlists automatic text
