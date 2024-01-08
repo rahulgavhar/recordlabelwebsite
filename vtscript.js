@@ -334,7 +334,7 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
 
   //Engaga should display only once per day (for users not subscribed)
   if (!window.location.href==("https://vestibuletrap.mozello.com" || "https://vestibuletrap.mozello.com/home/" || "https://vestibuletrap.mozello.com/home" || "https://vestibuletrap.mozello.com/")){
-    if(!document.cookie.includes("shownengagaOnce=yes"){
+    if(!document.cookie.includes("shownengagaOnce=yes")){
               var d = new Date();
               d.setTime(d.getTime() + (24 * 60 * 60 * 1000));
               var expires = "expires=" + d.toUTCString();
