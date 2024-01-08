@@ -326,7 +326,11 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.style.fontFamily="inherit";
          //#comp_submit
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.style.fontFamily="inherit";
-        document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.setAttribute("onclick",'engagadontdisplay("engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d", "yes", 24);');
+    
+    var d = new Date();
+    d.setTime(d.getTime() + (hours * 60 * 60 * 1000));
+    var expires = "expires=" + d.toUTCString();
+    document.cookie = "engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d" + "=" + "yes" + ";" + 24 + ";path=/";
                 }
             
         }, "2199");
