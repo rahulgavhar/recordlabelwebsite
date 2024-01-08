@@ -318,7 +318,6 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          //put font Exo 2 
              setTimeout(() => {
             if(document.querySelector(".engaga-frame").contentWindow.document.location.href!="about:blank"){
-              document.querySelector(".engaga-frame").contentWindow.document.body.style.opacity="1";
          document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('beforeend','<style>@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");</style>');
          document.querySelector(".engaga-frame").contentWindow.document.body.style.fontFamily="'Exo 2', Roboto";
          //.title
@@ -327,15 +326,18 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.style.fontFamily="inherit";
          //#comp_submit
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.style.fontFamily="inherit";
-
+        document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.setAttribute("onclick","engagadontdisplay()");
                 }
             
         }, "2199");
     
      }
 };
-  //set Engaga Opacity to 0 before it diplays again the second time
-  document.querySelector(".engaga-frame").contentWindow.document.body.style.opacity="0";
+
+  //engagadontdisplay onclick function
+  function engagadontdisplay(){
+    document.cookie = 'engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d=yes';
+  }
 
   //homepage playlists automatic text
      if (window.location.href==("https://vestibuletrap.mozello.com/" || "https://vestibuletrap.mozello.com/home/" || "https://vestibuletrap.mozello.com/home" || "https://vestibuletrap.com/" || "https://vestibuletrap.com/home")){
