@@ -328,9 +328,9 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.style.fontFamily="inherit";
     
     var d = new Date();
-    d.setTime(d.getTime() + (hours * 60 * 60 * 1000));
+    d.setTime(d.getTime() + (24 * 60 * 60 * 1000));
     var expires = "expires=" + d.toUTCString();
-    document.cookie = "engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d" + "=" + "yes" + ";" + 24 + ";path=/";
+    document.cookie = "engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d" + "=" + "yes" + ";" + expires + ";path=/";
                 }
             
         }, "2199");
