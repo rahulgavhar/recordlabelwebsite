@@ -132,7 +132,7 @@
                     successfunc = null;
                 }
 
-                var jqxhr = $.post(this.system_url + '/frontend/statistics/', {
+                var jqxhr = $.post('https://spark.engaga.com' + '/frontend/statistics/', {
                     url: window.location.href,
                     action: activity,
                     campaign_id: this.campaign_id
