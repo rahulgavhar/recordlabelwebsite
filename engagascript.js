@@ -166,7 +166,7 @@
             }
 
             function _onFormAppeared() {
-                this.has_shown = true;
+                this.has_shown = false;
                 this.is_visible = true;
                 this.placeAppearPixel();
                 this.sendStatistics('show');
@@ -411,6 +411,7 @@
                 has_shown : false,
                 system_url: null,
 
+                sendStatistics: _sendStatistics,
                 placePixel: _placePixel,
                 onFormAppeared: _onFormAppeared,
                 onFormHidden: _onFormHidden,
