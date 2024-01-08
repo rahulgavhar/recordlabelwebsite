@@ -316,7 +316,8 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
     //Change Engaga Font 
          //put font Exo 2 
              setTimeout(() => {
-            if(document.querySelector(".engaga-frame").contentWindow.document.location.href!="about:blank"){
+               if(document.querySelector(".engaga-scrollbox")!=null){
+            if(document.querySelector(".engaga-frame").contentWindow.document.location.href!="about:blank" && !document.cookie.includes("shownengagaOnce=yes"){
          document.querySelector(".engaga-frame").contentWindow.document.head.insertAdjacentHTML('beforeend','<style>@import url("https://fonts.googleapis.com/css2?family=Exo+2:wght@200;300;400;500;600;700;800&display=swap");</style>');
          document.querySelector(".engaga-frame").contentWindow.document.body.style.fontFamily="'Exo 2', Roboto";
          //.title
@@ -326,14 +327,27 @@ socialsec.firstElementChild.querySelector(".twitter").remove();
          //#comp_submit
          document.querySelector(".engaga-frame").contentWindow.document.body.firstElementChild.firstElementChild.firstElementChild.nextElementSibling.nextElementSibling.firstElementChild.nextElementSibling.nextElementSibling.nextElementSibling.style.fontFamily="inherit";
                 }
+               }
             
         }, "2199");
 };
 
   //Engaga should display only once per day (for users not subscribed)
-  if(!document.cookie.includes("engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d=yes")){
+  if (!window.location.href==("https://vestibuletrap.mozello.com" || "https://vestibuletrap.mozello.com/home/" || "https://vestibuletrap.mozello.com/home" || "https://vestibuletrap.mozello.com/"){
+    if(!document.cookie.includes("shownengagaOnce=yes"){
+              var d = new Date();
+              d.setTime(d.getTime() + (24 * 60 * 60 * 1000));
+              var expires = "expires=" + d.toUTCString();
+              document.cookie = "shownengagaOnce" + "=" + "yes" + ";" + expires + ";path=/";
+    }
+  }
+ setTimeout(() => {
+  if((document.cookie.includes("shownengagaOnce=yes") && document.cookie.includes("engaga_seen_84f2b37a6870c3cce1b7eb1211b2ef0d") || !document.cookie.includes("engaga_visited_84f2b37a6870c3cce1b7eb1211b2ef0d=yes"){
     document.querySelector(".engaga-scrollbox").remove();
   }
+   }, "599");
+
+
   //homepage playlists automatic text
      if (window.location.href==("https://vestibuletrap.mozello.com/" || "https://vestibuletrap.mozello.com/home/" || "https://vestibuletrap.mozello.com/home" || "https://vestibuletrap.com/" || "https://vestibuletrap.com/home")){
          var elements = document.getElementsByClassName('typewrite');
