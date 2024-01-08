@@ -113,7 +113,7 @@
             if (!enabled) {
                 return null;
             }
-            var badge = $('<div class="engaga-badge">Powered by <img src="https://spark.engaga.com/templates/_shared/engaga-logo.svg"></div>');
+            var badge = $('<div class="engaga-badge"></div>');
             badge.click(function () {
                 window.open('https://www.engaga.com/', '_blank');
             });
@@ -901,7 +901,7 @@
                 function ajaxLoadDialogContent(dialog, form_settings) {
                     var _dia = dialog;
                     $.ajax({
-                        url: urla + '/frontend/' + form_settings.user_id + '/' + form_settings.campaign_id + '/campaign.html'
+                        url: 'https://spark.engaga.com' + '/frontend/' + form_settings.user_id + '/' + form_settings.campaign_id + '/campaign.html'
                     })
                     .done(function(data) {
                         _dia.setIframeHtml(data);
