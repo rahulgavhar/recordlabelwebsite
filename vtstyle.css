@@ -1,0 +1,121 @@
+body{
+    height:100%;
+}
+::-webkit-scrollbar{
+    width:0.3rem;
+}
+::-webkit-scrollbar-thumb{
+    border-radius:5px;
+    background: linear-gradient(120deg, white, #811eba);
+}
+::-webkit-scrollbar-thumb:hover, ::-webkit-scrollbar-thumb:active{
+    background: linear-gradient(300deg, white, #811eba);
+}
+::-webkit-scrollbar-track{
+    background: transparent;
+}
+.on_hover a.moze-button:hover{
+    background-color:transparent;
+    color:white;
+    font-weight:600;
+    border:1.5px solid white;
+}
+.on_hover a.moze-button{
+    background-color: #f5f5f5;
+    font-weight:600;
+    color:black;
+}
+#menu{
+    touch-action:none;
+}
+.engaga-scrollbox{
+    z-index:54;
+}
+[data-row-id="6628645"] .moze-button{
+    border-width:1.3px;
+    padding:0.3em;
+    font-size:13px;
+}
+[data-row-id="6628794"] img, [data-row-id="6628645"] img{
+    min-width:100%;
+}
+.mobile-menu-closer a{
+    cursor:none;
+}
+.mobile-menu-closer svg:first-child{
+    float:right;
+}
+.mobile-menu-closer a:first-child{
+    height:20px;
+}
+.mobile-header #menu, .mobile-header #languages{
+    max-width:100%;
+    transition:0.5s;
+}
+
+#languages-opener{
+    display:none;
+}
+#back-to-top-btn{
+    z-index:7;
+    border: none;
+    cursor:none;
+}
+[data-row-id="10322040"] img{
+    aspect-ratio:1;
+}
+#menu-opener{
+    order:6;
+}
+.mobile-menu-opener{
+    cursor:none;
+}
+#footer .mz_social a{
+    padding:0;
+    margin:5px;
+}
+.x svg:hover{
+    color:white;
+}
+.spotify svg:hover{
+    color:#1ed760;
+}
+#title img{
+    max-width:80%;
+}
+.cursor{
+    z-index:800;
+}
+.sticky #menu > ul > li > a:hover,.sticky #menu > ul > li.selected > a{
+    color:#bebebe;
+}
+div[data-row-id="6117892"]{
+    background-image: url(https://www.mspot.com/wp-content/uploads/Pioneer-DJ-equipment-in-a-Club.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+a,input,textarea,label{
+    cursor:none;
+}
+input:focus::placeholder {
+  color: transparent;
+}
+::selection {
+    background-color: rgba(124,74,240, 0.1);
+    color:#7c4af0;
+}
+
+#loading{
+    background: #ffffff url('https://i.ibb.co/wY3qRkC/ecommaker-15700.gif') no-repeat center center;
+    height:100vh;
+    width:100%;
+    position:fixed;
+    background-size:25%;
+    z-index:10000000;
+}
+@media only screen and (min-width:750px){
+    #loading{
+        height:100vh;
+        background-size:10%;
+    }
+}
