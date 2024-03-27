@@ -229,7 +229,7 @@ const urlllap = window.location.href;
 const indxxap = urlllap.search(".com/artist");
 const basicidap = "#id";
 let statusap = "";
-if ((indxxap!=-1) && (urlllap!="https://vestibuletrap.mozello.com/artists/")  && (urlllap!="https://vestibuletrap.mozello.com/artists")){
+if ((indxxap!=-1) && (urlllap!="https://vestibuletrap.mozello.com/artists/") && (urlllap!="https://vestibuletrap.mozello.com/artist-services/") && (urlllap!="https://vestibuletrap.mozello.com/artist-services") && (urlllap!="https://vestibuletrap.mozello.com/artists")){
     
     if (urlllap.search(".com/artist/#id")!=-1){
         if ((Number.parseInt(urlllap.substr(indxxap+15))>Number.parseInt(document.querySelector(".artist").firstElementChild.getAttribute("artist-id"))) || (Number.parseInt(urlllap.substr(indxxap+15))<1) || isNaN(Number.parseInt(urlllmp.substr(indxxap+15)))){
